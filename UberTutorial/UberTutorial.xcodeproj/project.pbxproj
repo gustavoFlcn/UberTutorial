@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		EBA8E7DA24CA6EAE00FE2113 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA8E7D924CA6EAE00FE2113 /* SignUpController.swift */; };
 		EBA8E7DC24CB052600FE2113 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA8E7DB24CB052600FE2113 /* AuthButton.swift */; };
 		EBA8E7E024CB178100FE2113 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBA8E7DF24CB178100FE2113 /* GoogleService-Info.plist */; };
+		EBA8E7E224CB8BB000FE2113 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA8E7E124CB8BB000FE2113 /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		EBA8E7D924CA6EAE00FE2113 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		EBA8E7DB24CB052600FE2113 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		EBA8E7DF24CB178100FE2113 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EBA8E7E124CB8BB000FE2113 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,6 @@
 				4A4BF8D3B62B11F575219FBB /* Pods-UberTutorial.debug.xcconfig */,
 				730C0061842CC86E40D04FCA /* Pods-UberTutorial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -125,6 +126,7 @@
 			children = (
 				EBA8E7D524C9BC8600FE2113 /* LoginController.swift */,
 				EBA8E7D924CA6EAE00FE2113 /* SignUpController.swift */,
+				EBA8E7E124CB8BB000FE2113 /* HomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -262,6 +264,7 @@
 			files = (
 				EBA8E7DA24CA6EAE00FE2113 /* SignUpController.swift in Sources */,
 				EBA8E7DC24CB052600FE2113 /* AuthButton.swift in Sources */,
+				EBA8E7E224CB8BB000FE2113 /* HomeController.swift in Sources */,
 				EBA8E7BD24C9B9B900FE2113 /* AppDelegate.swift in Sources */,
 				EBA8E7D624C9BC8600FE2113 /* LoginController.swift in Sources */,
 				EBA8E7BF24C9B9B900FE2113 /* SceneDelegate.swift in Sources */,
