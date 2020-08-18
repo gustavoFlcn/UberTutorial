@@ -19,6 +19,7 @@
 		EBA8E7DC24CB052600FE2113 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA8E7DB24CB052600FE2113 /* AuthButton.swift */; };
 		EBA8E7E024CB178100FE2113 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBA8E7DF24CB178100FE2113 /* GoogleService-Info.plist */; };
 		EBA8E7E224CB8BB000FE2113 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA8E7E124CB8BB000FE2113 /* HomeController.swift */; };
+		EBA9FF1C24EB41A800BDCA40 /* LocationInputActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA9FF1B24EB41A800BDCA40 /* LocationInputActivationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		EBA8E7DB24CB052600FE2113 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		EBA8E7DF24CB178100FE2113 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		EBA8E7E124CB8BB000FE2113 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		EBA9FF1B24EB41A800BDCA40 /* LocationInputActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInputActivationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				EBA8E7DB24CB052600FE2113 /* AuthButton.swift */,
+				EBA9FF1B24EB41A800BDCA40 /* LocationInputActivationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				EBA8E7BD24C9B9B900FE2113 /* AppDelegate.swift in Sources */,
 				EBA8E7D624C9BC8600FE2113 /* LoginController.swift in Sources */,
 				EBA8E7BF24C9B9B900FE2113 /* SceneDelegate.swift in Sources */,
+				EBA9FF1C24EB41A800BDCA40 /* LocationInputActivationView.swift in Sources */,
 				EBA8E7D824C9DB7600FE2113 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

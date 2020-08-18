@@ -18,6 +18,8 @@ class HomeController: UIViewController{
     //MARK: -Propresties
     private let mapView = MKMapView()
     private let locationManager = CLLocationManager()
+    private let inputActivationView = LocationInputActivationView()
+    
     
     //MARK: -Lifecyle
     override func viewDidLoad() {
@@ -51,6 +53,17 @@ class HomeController: UIViewController{
     //MARK: -Helper Functions
     func configureUI(){
         configureMapView()
+        
+        self.view.addSubview(inputActivationView)
+        inputActivationView.delegate = self
+        inputActivationView.centerX(inView: view)
+        inputActivationView.setDimension(height: 50, width: self.view.frame.width - 64)
+        inputActivationView.anchor(top: view.safeAreaLayoutGuide.topAnchor, paddingTop: 32)
+        inputActivationView.alpha = 0
+        
+        UIView.animate(withDuration: 2){
+            self.inputActivationView.alpha = 1
+        }
     }
     
     func configureMapView(){
@@ -91,4 +104,12 @@ extension HomeController: CLLocationManagerDelegate{
             locationManager.requestAlwaysAuthorization()
         }
     }
+}
+
+extension HomeController: LocationInputActivationViewDelegate{
+    func presentLocationInputView() {
+        print(123)
+    }
+    
+    
 }
