@@ -34,12 +34,8 @@ class LocationInputActivationView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        addShadow()
         self.backgroundColor = .white
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOpacity = 0.55
-        layer.shadowOffset = CGSize(width: 0.5, height: 0.5)
-        
-        
         self.addSubview(indicatorView)
         self.indicatorView.centerY(inView: self, leftAnchor: self.leftAnchor, paddingLeft: 16)
         self.indicatorView.setDimension(height: 6, width: 6)

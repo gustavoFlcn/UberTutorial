@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA7245C0A90EE66B180BBB36 /* Pods_UberTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CAA37CA9CCA230513862391 /* Pods_UberTutorial.framework */; };
+		EB277C6124ECA37A009A01BD /* LocationInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB277C6024ECA37A009A01BD /* LocationInputView.swift */; };
 		EBA8E7BD24C9B9B900FE2113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA8E7BC24C9B9B900FE2113 /* AppDelegate.swift */; };
 		EBA8E7BF24C9B9B900FE2113 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA8E7BE24C9B9B900FE2113 /* SceneDelegate.swift */; };
 		EBA8E7C424C9B9B900FE2113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBA8E7C224C9B9B900FE2113 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		4A4BF8D3B62B11F575219FBB /* Pods-UberTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberTutorial.debug.xcconfig"; path = "Target Support Files/Pods-UberTutorial/Pods-UberTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		730C0061842CC86E40D04FCA /* Pods-UberTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberTutorial.release.xcconfig"; path = "Target Support Files/Pods-UberTutorial/Pods-UberTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		7CAA37CA9CCA230513862391 /* Pods_UberTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB277C6024ECA37A009A01BD /* LocationInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInputView.swift; sourceTree = "<group>"; };
 		EBA8E7B924C9B9B900FE2113 /* UberTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA8E7BC24C9B9B900FE2113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBA8E7BE24C9B9B900FE2113 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				EBA8E7DB24CB052600FE2113 /* AuthButton.swift */,
 				EBA9FF1B24EB41A800BDCA40 /* LocationInputActivationView.swift */,
+				EB277C6024ECA37A009A01BD /* LocationInputView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				EBA8E7DA24CA6EAE00FE2113 /* SignUpController.swift in Sources */,
 				EBA8E7DC24CB052600FE2113 /* AuthButton.swift in Sources */,
 				EBA8E7E224CB8BB000FE2113 /* HomeController.swift in Sources */,
+				EB277C6124ECA37A009A01BD /* LocationInputView.swift in Sources */,
 				EBA8E7BD24C9B9B900FE2113 /* AppDelegate.swift in Sources */,
 				EBA8E7D624C9BC8600FE2113 /* LoginController.swift in Sources */,
 				EBA8E7BF24C9B9B900FE2113 /* SceneDelegate.swift in Sources */,
