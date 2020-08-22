@@ -10,8 +10,9 @@ import UIKit
 import Firebase
 import FirebaseCore
 import FirebaseAuth
-
 import MapKit
+
+let reuseIndentifier = "LocationInputCell"
 
 class HomeController: UIViewController{
     
@@ -20,7 +21,9 @@ class HomeController: UIViewController{
     private let locationManager = CLLocationManager()
     private let inputActivationView = LocationInputActivationView()
     private let locationInputView = LocationInputView()
+    private let tableView = UITableView()
     
+    private final let locationInputViewHeight: CGFloat = 200
     
     //MARK: -Lifecyle
     override func viewDidLoad() {
@@ -66,6 +69,8 @@ class HomeController: UIViewController{
         UIView.animate(withDuration: 2){
             self.inputActivationView.alpha = 1
         }
+        
+        configureTableView()
     }
     
     func configureMapView(){
@@ -78,7 +83,7 @@ class HomeController: UIViewController{
     
     func configureLocationInputView(){
         view.addSubview(locationInputView)
-        locationInputView.anchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, height: 200)
+        locationInputView.anchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, height: locationInputViewHeight)
         locationInputView.alpha = 0
         
         UIView.animate(withDuration: 0.5, animations: {
@@ -86,6 +91,19 @@ class HomeController: UIViewController{
         }) { _ in
             print("DEBUG: Present table view...")
         }
+    }
+    
+    func configureTableView(){
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        tableView.register(LocationInputCell.self, forCellReuseIdentifier: reuseIndentifier)
+        tableView.rowHeight = 60
+        
+        let tableViewHeight = view.frame.height - locationInputViewHeight
+        tableView.frame = CGRect(x: 0, y: view.frame.height,
+                                 width: view.frame.width, height: tableViewHeight)
+        view.addSubview(tableView)
     }
 }
 
@@ -139,4 +157,18 @@ extension HomeController: LocationInputViewDelegate{
             })
         }
     }
+}
+
+//MARK: - TableViewDelegate and TableViewDataSource
+extension HomeController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIndentifier, for: indexPath) as! LocationInputCell
+        return cell
+    }
+    
+    
 }
